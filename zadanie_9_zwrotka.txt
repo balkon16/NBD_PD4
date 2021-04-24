@@ -1,0 +1,14 @@
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8ypz/fr7avXQ9RCiRMY+VoXXrj5t8WQA=
+Vary: Accept-Encoding
+Server: MochiWeb/2.20.0 WebMachine/1.11.1 (greased slide to failure)
+Link: </buckets/s23452>; rel="up"
+Last-Modified: Sat, 24 Apr 2021 15:30:13 GMT
+ETag: "ryIcQpd8kZksgpbjdIecw"
+Date: Sat, 24 Apr 2021 15:31:37 GMT
+Content-Type: application/json
+Content-Length: 29
+
+{
+    "the_only_field": 123
+}

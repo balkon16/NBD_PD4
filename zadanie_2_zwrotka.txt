@@ -1,0 +1,19 @@
+X-Riak-Vclock: a85hYGBgzGDKBVI8ypz/fr7a0xkBEUpkzGNlKF374yZfFgA=
+Vary: Accept-Encoding
+Server: MochiWeb/2.20.0 WebMachine/1.11.1 (greased slide to failure)
+Link: </buckets/s23452>; rel="up"
+Last-Modified: Sat, 24 Apr 2021 14:55:49 GMT
+ETag: "6B9E3FY1IUhDbVEq8mdkkp"
+Date: Sat, 24 Apr 2021 15:12:00 GMT
+Content-Type: application/json
+Content-Length: 168
+
+{
+    "field_one": 123,
+    "field_two": ["a", "b", "c"],
+    "field_three": {
+        "inner_one": false,
+        "inner_two": 10.1
+    },
+    "field_four": "abcdef"
+}

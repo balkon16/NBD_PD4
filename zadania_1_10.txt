@@ -1,0 +1,134 @@
+----------------------Zad.1----------------------
+
+curl -i --request PUT 'http://localhost:8098/buckets/s23452/keys/doc1' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "field_one": 123,
+    "field_two": ["a", "b", "c"],
+    "field_three": {
+        "inner_one": false,
+        "inner_two": 10.1
+    },
+    "field_four": "abcdef"
+}'
+
+
+curl -i --request POST 'http://localhost:8098/buckets/s23452/keys' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "key1": null,
+    "key2": "string_value",
+    "key3": -0.0001,
+    "key4": [
+        {"inner_one": 10, "inner_two": "value"},
+        {"inner_one": -1, "inner_two": "test"}
+    ]
+}'
+
+
+curl -i --request POST 'http://localhost:8098/buckets/s23452/keys/doc3_v1' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "key1": "string_value123",
+    "key2": 0,
+    "key3": true,
+    "key4": [
+        {"inner_one": null, "inner_two": "value"},
+        {"inner_one": true, "inner_two": "test"}
+    ]
+}'
+
+
+curl -i --request POST 'http://localhost:8098/buckets/s23452/keys' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "key1": 10.1,
+    "key2": false,
+    "key3": "string_value",
+    "key4": [ 10.1, -0.01, 10
+    ]
+}'
+
+ ----------------------Zad.2----------------------
+
+ curl -i --request GET 'localhost:8098/buckets/s23452/keys/doc1'
+
+ ----------------------Zad.3---------------------- 
+
+ curl -i --request PUT 'http://localhost:8098/buckets/s23452/keys/doc1' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "new_field": "new_value_zadanie03",
+    "field_one": 123,
+    "field_two": [
+        "a",
+        "b",
+        "c"
+    ],
+    "field_three": {
+        "inner_one": false,
+        "inner_two": 10.1
+    },
+    "field_four": "abcdef"
+}'
+
+----------------------Zad.4---------------------- 
+
+curl -i --request PUT 'http://localhost:8098/buckets/s23452/keys/doc1' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "new_field": "new_value_zadanie03",
+    "field_one": 123,
+    "field_two": [
+        "a",
+        "b",
+        "c"
+    ],
+    "field_four": "abcdef"
+}'
+
+----------------------Zad.5----------------------
+
+ curl -i --request PUT 'http://localhost:8098/buckets/s23452/keys/doc1' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "field_one": 24567,
+    "field_two": [
+        "a",
+        "b",
+        "c"
+    ],
+    "field_three": {
+        "inner_one": false,
+        "inner_two": 10.1
+    },
+    "field_four": "abcdef"
+}'
+
+
+----------------------Zad.6----------------------
+
+curl -i --request DELETE 'http://localhost:8098/buckets/s23452/keys/doc3_v1'
+
+----------------------Zad.7----------------------
+
+curl -i --request GET 'localhost:8098/buckets/s23452/keys/a_key'
+
+
+----------------------Zad.8----------------------
+
+curl -i --request POST 'http://localhost:8098/buckets/s23452/keys' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "the_only_field": 123
+}'
+
+
+----------------------Zad.9----------------------
+
+curl -i --request GET 'http://localhost:8098/buckets/s23452/keys/SpnwWAeQzhSQ3RYwhsq3g7U6q2e'
+
+
+----------------------Zad.10----------------------
+
+curl -i --request DELETE 'http://localhost:8098/buckets/s23452/keys/SpnwWAeQzhSQ3RYwhsq3g7U6q2e' 

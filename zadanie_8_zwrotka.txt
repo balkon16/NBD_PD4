@@ -1,0 +1,7 @@
+HTTP/1.1 201 Created
+Vary: Accept-Encoding
+Server: MochiWeb/2.20.0 WebMachine/1.11.1 (greased slide to failure)
+Location: /buckets/s23452/keys/SpnwWAeQzhSQ3RYwhsq3g7U6q2e
+Date: Sat, 24 Apr 2021 15:30:13 GMT
+Content-Type: application/json
+Content-Length: 0
